@@ -1,0 +1,69 @@
+// Define variables for reusable colors and dimensions
+$primaryColor: #7285f2;
+$secondaryColor: #868686;
+$selectWidth: 100px;
+$selectHeight: 40px;
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+  user-select: none;
+
+  &.open .options {
+    display: block;
+  }
+}
+
+.selected-option {
+  border: none;
+  color: $secondaryColor;
+  background-color: #fffdff;
+  font-size: 15px;
+  width: $selectWidth;
+  height: $selectHeight;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: $secondaryColor;
+    color: #fffdff;
+  }
+}
+
+.options {
+  z-index: 999;
+  list-style-type: none;
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: $selectWidth;
+  background-color: #fffdff;
+  border: none;
+  border-top: none;
+  display: none;
+}
+
+.option {
+  padding: 4px;
+  color: $secondaryColor;
+  cursor: pointer;
+  background-color: #fffdff;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    font-weight: bold;
+    color: #000;
+  }
+}
+
+.CheckMark {
+  fill: $primaryColor;
+  font-weight: bold;
+}

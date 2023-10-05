@@ -1,0 +1,35 @@
+.ButtonCommon {
+  user-select: none;
+  border: none;
+  color: #868686;
+  background-color: #fffdff;
+  font-size: 15px;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.ButtomZoomIn,
+.ButtomZoomOut {
+  @extend .ButtonCommon;
+}
+
+.ButtomZoomIn:hover,
+.ButtomZoomOut:hover {
+  background-color: #868686;
+  color: #fffdff;
+}
+
+.Select {
+  @extend .ButtonCommon;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  width: 120px;
+  margin: 5px;
+  box-shadow: none;
+  text-align: center;
+}

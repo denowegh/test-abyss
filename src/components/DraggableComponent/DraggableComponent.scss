@@ -1,0 +1,12 @@
+.draggable-element {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.draggable-element.dragging {
+  cursor: move;
+}

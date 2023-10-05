@@ -1,0 +1,108 @@
+$widthButton: 150px;
+$heightButton: 50px;
+
+.MainField {
+  position: relative;
+  border: 1px solid #c5d0da;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AppClass {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  height: 100vh;
+  margin: 0px;
+}
+
+.button-common {
+  position: absolute;
+  height: $heightButton;
+  width: $widthButton;
+  border: none;
+  background-color: #c5d0da;
+  color: #f5fdff;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  &:hover {
+    background-color: #757c81;
+  }
+  &:active {
+    background-color: #585d61;
+  }
+}
+.ButtonTopClass {
+  @extend .button-common;
+  top: 0;
+}
+
+.ButtonBottomClass {
+  @extend .button-common;
+  bottom: 0;
+}
+
+.ButtonLeftClass {
+  @extend .button-common;
+  left: 0;
+  height: $widthButton;
+  width: $heightButton;
+}
+
+.ButtonRightClass {
+  @extend .button-common;
+  right: 0;
+  height: $widthButton;
+  width: $heightButton;
+}
+
+.Header {
+  margin: 25px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ZoomBlock {
+  display: flex;
+  flex-direction: row;
+}
+
+.CenterButton {
+  user-select: none;
+  border: none;
+  color: #868686;
+  background-color: #fffdff;
+  font-size: 15px;
+  width: 50px;
+  height: 40px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  &:hover {
+    background-color: #868686;
+    fill: #fffdff;
+  }
+}
+
+.ListViewButton {
+  user-select: none;
+  width: 110px;
+  height: 50px;
+  border: none;
+  color: #fffdff;
+  background-color: #7285f2;
+  cursor: pointer;
+  font-weight: bold;
+  &:hover {
+    background-color: #455acc;
+    color: #fffdff;
+  }
+}
+.ElementTransition {
+  transition: left 0.3s, top 0.3s, right 0.3s, left 0.3s;
+}

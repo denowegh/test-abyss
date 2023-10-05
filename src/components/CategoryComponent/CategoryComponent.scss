@@ -1,0 +1,62 @@
+.BodyCategoryComponent {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.BodyInput {
+  display: flex;
+  flex-direction: row;
+}
+
+.ButtonSave {
+  border-width: 0px;
+  border-radius: 50%;
+  margin: 3px;
+  height: 23px;
+  width: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+}
+
+.ButtonCansel {
+  border-width: 0px;
+  border-radius: 50%;
+  margin: 3px;
+  height: 23px;
+  width: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+.ButtonCreate {
+  border-width: 0px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 3px;
+  height: 23px;
+  width: 23px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  background-color: gray;
+}
+.InputText {
+  border: none;
+}
+.NameSpan {
+  user-select: none;
+  padding: 7px;
+  font-weight: bold;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.151);
+}
+.MainCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

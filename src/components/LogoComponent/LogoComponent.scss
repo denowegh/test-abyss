@@ -1,0 +1,24 @@
+.LogoMain {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 27px;
+  margin: 20px;
+}
+.LogoText {
+  height: 40px;
+}
+.LogoZero {
+  background-color: #fdbf49;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  width: 25px;
+  color: #fff;
+  height: 25px;
+  margin-left: 12px;
+}
